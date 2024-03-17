@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_android-2.2.2/android" />
+            <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_android-2.2.1/android" />
+            <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite-2.3.2/android" />
+            <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.4.12/android" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/features/ads/ads-service" />
+            <option value="$PROJECT_DIR$/features/common/core" />
+            <option value="$PROJECT_DIR$/features/common/ui" />
+            <option value="$PROJECT_DIR$/features/movie/.android/Flutter" />
+            <option value="$PROJECT_DIR$/features/qr-scanner/qr-scanner-data" />
+            <option value="$PROJECT_DIR$/features/qr-scanner/qr-scanner-domain" />
+            <option value="$PROJECT_DIR$/features/qr-scanner/qr-scanner-ui" />
+            <option value="$PROJECT_DIR$/features/tcg/tcg-data" />
+            <option value="$PROJECT_DIR$/features/tcg/tcg-domain" />
+            <option value="$PROJECT_DIR$/features/tcg/tcg-ui" />
+            <option value="$PROJECT_DIR$/features/vgc/vgc-data" />
+            <option value="$PROJECT_DIR$/features/vgc/vgc-domain" />
+            <option value="$PROJECT_DIR$/features/vgc/vgc-ui" />
+            <option value="$PROJECT_DIR$/qrapp" />
+          </set>
+        </option>
+        <option name="resolveExternalAnnotations" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

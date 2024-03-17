@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qrscanner_results_title">Results</string>
+    <string name="qrscanner_results_label">Results</string>
+    <string name="qrscanner_result_copy_to_clipboard">Copy to clipboard</string>
+    <string name="qrscanner_result_open_website">Open website</string>
+    <string name="qrscanner_camera_upload_from_gallery">Upload from gallery</string>
+    <string name="qrscanner_camera_go_to_settings">Go to settings</string>
+    <string name="qrscanner_settings_privacy_policy">Privacy policy</string>
+    <string name="qrscanner_settings_terms_and_conditions">Terms and conditions</string>
+    <string name="qrscanner_settings_title">Settings</string>
+</resources>

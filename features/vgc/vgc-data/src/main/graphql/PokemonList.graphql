@@ -1,0 +1,8 @@
+query PokemonList($limit: Int, $offset: Int, $name: String) {
+    pokemon: pokemon_v2_pokemonspecies (limit: $limit, offset: $offset, order_by: {id: asc}, where: { name: { _ilike: $name}}) {
+        id
+        species_name: pokemon_v2_pokemonspeciesnames(where: {language_id: {_eq: 9}}) {
+            name
+        }
+    }
+}

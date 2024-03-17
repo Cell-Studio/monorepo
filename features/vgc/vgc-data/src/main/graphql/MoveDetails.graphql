@@ -1,0 +1,12 @@
+query MoveDetails($id: Int) {
+    moves: pokemon_v2_move(where: {id: {_eq: $id}}) {
+        id
+        power
+        accuracy
+        type_id
+        move_damage_class_id
+        move_name: pokemon_v2_movenames (where: {language_id: {_eq: 9}}) {
+            name
+        }
+    }
+}

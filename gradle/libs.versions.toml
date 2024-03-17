@@ -1,0 +1,18 @@
+[versions]
+androidGradlePlugin = "8.3.0"
+daggerHiltPlugin = "2.50"
+kotlinPlugin = "1.8.10"
+apolloGraphQLPlugin = "4.0.0-beta.4"
+
+ktx = "1.12.0"
+
+[libraries]
+androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "daggerHiltPlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinPlugin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinPlugin" }
+apollo-graphql = { id = "com.apollographql.apollo3", version.ref = "apolloGraphQLPlugin" }

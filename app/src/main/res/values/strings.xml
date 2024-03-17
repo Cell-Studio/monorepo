@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PikaRoad</string>
+    <string name="home_onboarding">Onboarding</string>
+    <string name="home_vgc">Vgc</string>
+    <string name="home_tcg">Tcg</string>
+    <string name="home_qr_scanner">QR Scanner</string>
+    <string name="home_movie">Movie</string>
+
+</resources>

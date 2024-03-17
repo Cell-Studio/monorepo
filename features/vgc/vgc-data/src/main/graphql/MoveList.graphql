@@ -1,0 +1,12 @@
+query MoveList($limit: Int, $offset: Int) {
+    moves: pokemon_v2_move(limit: $limit, offset: $offset, order_by: {id: asc}) {
+        id
+        power
+        accuracy
+        type_id
+        move_damage_class_id
+        move_name: pokemon_v2_movenames (where: {language_id: {_eq: 9}}) {
+            name
+        }
+    }
+}

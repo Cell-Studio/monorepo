@@ -1,0 +1,50 @@
+query PokemonDetail($id: Int) {
+    pokemon: pokemon_v2_pokemonspecies(where: {id: {_eq: $id}}) {
+        id
+        species_name: pokemon_v2_pokemonspeciesnames(where: {language_id: {_eq: 9}}) {
+            name
+        }
+        pokemon_data: pokemon_v2_pokemons {
+            stats: pokemon_v2_pokemonstats {
+                base_stat
+                id: stat_id
+            }
+            abilities: pokemon_v2_pokemonabilities {
+                id
+                is_hidden
+                ability_id
+                metadata: pokemon_v2_ability {
+                    name: pokemon_v2_abilitynames(where: {language_id: {_eq: 9}}) {
+                        name
+                    }
+                    description: pokemon_v2_abilityeffecttexts(where: {language_id: {_eq: 9}}) {
+                        effect
+                    }
+                }
+            }
+            moves: pokemon_v2_pokemonmoves {
+                id
+                move_id
+                level
+                move_learn_method_id
+                metadata: pokemon_v2_move {
+                    name: pokemon_v2_movenames(where: {language_id: {_eq: 9}}) {
+                        name
+                    }
+                    accuracy: accuracy
+                    power: power
+                }
+            }
+            types: pokemon_v2_pokemontypes {
+                id
+                slot
+                type_id
+                metadata: pokemon_v2_type {
+                    name: pokemon_v2_typenames (where: {language_id: {_eq: 9}}) {
+                        name
+                    }
+                }
+            }
+        }
+    }
+}

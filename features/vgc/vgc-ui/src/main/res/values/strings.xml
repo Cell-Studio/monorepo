@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="details_vgc_name">Name: %1$s</string>
+    <string name="details_vgc_open_tcg">Open TCG</string>
+    <string name="details_vgc_types">Types:</string>
+    <string name="details_vgc_abilities">Abilities</string>
+    <string name="details_vgc_stats">Stats</string>
+    <string name="details_vgc_moves">Moves</string>
+    <string name="details_vgc_hidden">H.A.</string>
+
+    <string name="details_vgc_hp">Hp</string>
+    <string name="details_vgc_special_attack">Sp. Att</string>
+    <string name="details_vgc_attack">Att</string>
+    <string name="details_vgc_special_defense">Sp. Def</string>
+    <string name="details_vgc_defense">Def</string>
+    <string name="details_vgc_speed">Spe</string>
+
+    <string name="filter_vgc_name">Name</string>
+    <string name="filter_vgc_submit">Submit</string>
+
+    <string name="home_vgc_title">Home</string>
+    <string name="home_vgc_sprite">Sprite</string>
+    <string name="home_vgc_name">Name</string>
+
+    <string name="dashboard_vgc_home">Home</string>
+    <string name="dashboard_vgc_move">Moves</string>
+
+    <string name="moves_vgc_title">Moves</string>
+    <string name="moves_vgc_name">Name</string>
+    <string name="moves_vgc_power">Power</string>
+    <string name="moves_vgc_accuracy">Accuracy</string>
+    <string name="moves_vgc_type">Type</string>
+    <string name="moves_vgc_normal">Normal</string>
+    <string name="moves_vgc_fighting">Fighting</string>
+    <string name="moves_vgc_flying">Flying</string>
+    <string name="moves_vgc_poison">Poison</string>
+    <string name="moves_vgc_ground">Ground</string>
+    <string name="moves_vgc_rock">Rock</string>
+    <string name="moves_vgc_bug">Bug</string>
+    <string name="moves_vgc_ghost">Ghost</string>
+    <string name="moves_vgc_steel">Steel</string>
+    <string name="moves_vgc_fire">Fire</string>
+    <string name="moves_vgc_water">Water</string>
+    <string name="moves_vgc_grass">Grass</string>
+    <string name="moves_vgc_electric">Electric</string>
+    <string name="moves_vgc_psychic">Steel</string>
+    <string name="moves_vgc_ice">Ice</string>
+    <string name="moves_vgc_dragon">Dragon</string>
+    <string name="moves_vgc_dark">Dark</string>
+    <string name="moves_vgc_fairy">Fairy</string>
+    <string name="moves_vgc_unknown">Unknown</string>
+    <string name="moves_vgc_shadow">Shadow</string>
+
+    <string name="moves_vgc_damage_type">Damage Type</string>
+    <string name="moves_vgc_damage_type_status">Status</string>
+    <string name="moves_vgc_damage_type_physical">Physical</string>
+    <string name="moves_vgc_damage_type_special">Special</string>
+    <string name="moves_vgc_damage_type_unknown">Unknown</string>
+
+</resources>
