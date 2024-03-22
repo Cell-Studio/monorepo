@@ -44,14 +44,17 @@ project(":tcg-domain").projectDir = File(rootDir, "features/tcg/tcg-domain")
 include ("tcg-ui")
 project(":tcg-ui").projectDir = File(rootDir, "features/tcg/tcg-ui")
 
-include("qr-scanner-data")
-project(":qr-scanner-data").projectDir = File(rootDir, "features/qr-scanner/qr-scanner-data")
-
-include("qr-scanner-domain")
-project(":qr-scanner-domain").projectDir = File(rootDir, "features/qr-scanner/qr-scanner-domain")
-
 include("qr-scanner-ui")
 project(":qr-scanner-ui").projectDir = File(rootDir, "features/qr-scanner/qr-scanner-ui")
 
 include(":ads-service")
 project(":ads-service").projectDir = File(rootDir, "features/ads/ads-service")
+
+include(":podcast-data")
+project(":podcast-data").projectDir = File(rootDir, "features/podcast/podcast-data")
+
+include(":podcast-domain")
+project(":podcast-domain").projectDir = File(rootDir, "features/podcast/podcast-domain")
+
+include(":podcast-ui")
+project(":podcast-ui").projectDir = File(rootDir, "features/podcast/podcast-ui")

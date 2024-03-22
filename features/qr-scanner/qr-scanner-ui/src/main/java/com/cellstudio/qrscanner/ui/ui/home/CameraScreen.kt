@@ -38,7 +38,6 @@ import com.cellstudio.qrscanner.ui.R
 import com.cellstudio.qrscanner.ui.analyzer.BarcodeAnalyzer
 import com.cellstudio.qrscanner.ui.services.LocalQrScannerUIService
 import com.cellstudio.qrscanner.ui.ui.common.QrScannerView
-import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import kotlinx.coroutines.flow.collectLatest
 
 @Composable

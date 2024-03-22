@@ -6,8 +6,98 @@ apolloGraphQLPlugin = "4.0.0-beta.4"
 
 ktx = "1.12.0"
 
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+androidxComposeBom = "2023.03.00"
+androidxLifecycle = "2.7.0"
+androidxActivity = "1.8.2"
+androidxNavigationCompose = "2.7.7"
+androidxLifecycleRuntimeCompose = "2.7.0"
+
+playServicesAds = "23.0.0"
+daggerHilt = "2.50"
+daggerHiltNavigationCompose = "1.2.0-rc01"
+retrofit = "2.9.0"
+kotlinSerialization = "1.6.0"
+retrofitKotlinSerialization = "1.0.0"
+okhttp ="4.12.0"
+webBrowser = "1.8.0"
+materialIcons = "1.6.2"
+webKit ="1.8.0"
+androidxCamera = "1.4.0-alpha04"
+mlKit = "17.2.0"
+kotlinxCoroutinsGuava = "1.6.2"
+coilCompose = "2.5.0"
+coilGif = "2.5.0"
+graphQl = "4.0.0-beta.4"
+
 [libraries]
+# android
 androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-material-icon = { group = "androidx.compose.material", name = "material-icons-core", version.ref = "materialIcons" }
+androidx-lifecycle = { group = "androidx.lifecycle", name ="lifecycle-runtime-ktx", version.ref = "androidxLifecycle"}
+androidx-activity = { group = "androidx.activity", name ="activity-compose", version.ref = "androidxActivity"}
+androidx-navigation-compose = { group = "androidx.navigation", name ="navigation-compose", version.ref = "androidxNavigationCompose"}
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name="lifecycle-runtime-compose", version.ref = "androidxLifecycleRuntimeCompose"}
+
+# serialization
+kotlinx-serialization =  { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinSerialization" }
+
+# okhttp
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+retrofit-kotlinx-serialization =  { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinSerialization" }
+
+# web browser - Custom Chrome Tabs
+browser = { group = "androidx.browser", name = "browser", version.ref = "webBrowser" }
+
+# web kit - Web View
+web-kit = { group = "androidx.webkit", name = "webkit", version.ref = "webKit" }
+
+# dagger
+dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "daggerHilt" }
+dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "daggerHilt" }
+dagger-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "daggerHiltNavigationCompose" }
+
+# ads
+android-play-services-ads = { group = "com.google.android.gms", name = "play-services-ads", version.ref = "playServicesAds" }
+
+# unit testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+
+# camera
+androidx-camera-camera = { group = "androidx.camera", name = "camera-camera2", version.ref = "androidxCamera" }
+androidx-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "androidxCamera" }
+androidx-camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "androidxCamera" }
+
+# mlkit
+mlkit-barcode = { group = "com.google.mlkit", name = "barcode-scanning", version.ref = "mlKit" }
+
+# guava coroutines (admob and camera does not work well together)
+kotlinx-coroutines-guava = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-guava", version.ref = "kotlinxCoroutinsGuava" }
+
+# coil
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coilCompose" }
+coil-gif = { group = "io.coil-kt", name = "coil-gif", version.ref = "coilGif" }
+
+# graphql
+apollo-graphql = { group = "com.apollographql.apollo3", name = "apollo-runtime", version.ref = "graphQl" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
@@ -15,4 +105,5 @@ android-library = { id = "com.android.library", version.ref = "androidGradlePlug
 dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "daggerHiltPlugin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinPlugin" }
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinPlugin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinPlugin" }
 apollo-graphql = { id = "com.apollographql.apollo3", version.ref = "apolloGraphQLPlugin" }
